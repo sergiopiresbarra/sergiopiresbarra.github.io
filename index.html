@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sergio Home Page</title>
+	<meta charset="UTF-8"/>
+<title>Sergio Pires Barra</title>
+  <style>
+  body{
+          background-image: url("https://ogimg.infoglobo.com.br/in/19145023-287-d7d/FT1500A/550/nasanebulaprince.jpg");
+          color: rgba(0, 0, 0, 1);
+	    }
+    div#interface {
+	    	width: 900px;
+	    	background-color: #ebebeb;
+	    	margin: -20px auto 0px auto;
+	    	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	    	padding: 10px 10px 10px 10px;
+	    }
+    header#cabecalho h1{
+			font-family: Arial, sans-serif;
+			font-size: 30pt;
+			color: #606060;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+			padding: 0px;
+			margin-bottom: 10px;
+		}
+    
+    div#interface p#v {
+      margin-bottom: 0px;
+    }
+    
+    div#interface a#ss:hover {
+      background-color: #c6c6c6;
+      color: #ffffff;
+    }
+    div#interface a#dd:hover {
+      background-color: #c6c6c6;
+      color: #ffffff;
+    }
+    div#interface a#ff:hover {
+      background-color: #c6c6c6;
+      color: #ffffff;
+    }
+    div#interface a#gg:hover {
+      background-color: #c6c6c6;
+      color: #ffffff;
+    }
+     div#interface a#ss {
+			color: #ff6347;
+			text-decoration: none;
+       transition: background-color 1s;
+		}
+      div#interface a#dd {
+			color: #1e90ff;
+			text-decoration: none;
+       transition: background-color 1s;
+		}
+    div#interface a#ff {
+			color: #3cb371;
+			text-decoration: none;
+       transition: background-color 1s;
+		}
+    div#interface a#gg {
+			color: #808080;
+			text-decoration: none;
+       transition: background-color 1s;
+		}
+		
+		div#interface img#sab {
+			position: absolute;
+			opacity: 1;
+			top: 245px;
+			left: 500px;
+		}
+		
+    div#clock {
+			position: absolute;
+			left: 880px; 
+			top: 10px;
+
+		}
+  * {cursor: url(lightsabergreen2.cur), default;}
+
+  </style>
 </head>
 <body>
+	<div id="clock">
+	<SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
 
-<h1>Minhas Paginas</h1>
-<p>12</p>
+var now = new Date();
+var mName = now.getMonth() +1 ;
+var dName = now.getDay() +1;
+var dayNr = now.getDate();
+var yearNr=now.getYear();
+if(dName==1) {Day = "Domingo";}
+if(dName==2) {Day = "Segunda-feira";}
+if(dName==3) {Day = "Terça-feira";}
+if(dName==4) {Day = "Quarta-feira";}
+if(dName==5) {Day = "Quinta-feira";}
+if(dName==6) {Day = "Sexta-feira";}
+if(dName==7) {Day = "Sábado";}
+if(mName==1){Month = "Janeiro";}
+if(mName==2){Month = "Fevereiro";}
+if(mName==3){Month = "Março";}
+if(mName==4){Month = "Abril";}
+if(mName==5){Month = "Maio";}
+if(mName==6){Month = "Junho";}
+if(mName==7){Month = "Julho";}
+if(mName==8){Month = "Agosto";}
+if(mName==9){Month = "Setembro";}
+if(mName==10){Month = "Outubro";}
+if(mName==11){Month = "Novembro";}
+if(mName==12){Month = "Dezembro";}
+if(yearNr < 2000) {Year = 1900 + yearNr;}
+else {Year = yearNr;}
+var todaysDate =(" " + Day + ", " + dayNr + "/" + Month + "/" + Year);
 
-</body>
+document.write('  '+todaysDate);
+
+//-->
+</SCRIPT>
+
+&nbsp;&nbsp;
+<SPAN ID="Clock">00:00:00</SPAN>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+  var Elem = document.getElementById("Clock");
+  function Horario(){ 
+    var Hoje = new Date(); 
+    var Horas = Hoje.getHours(); 
+    if(Horas < 10){ 
+      Horas = "0"+Horas; 
+    } 
+    var Minutos = Hoje.getMinutes(); 
+    if(Minutos < 10){ 
+      Minutos = "0"+Minutos; 
+    } 
+    var Segundos = Hoje.getSeconds(); 
+    if(Segundos < 10){ 
+      Segundos = "0"+Segundos; 
+    } 
+    Elem.innerHTML = Horas+":"+Minutos+":"+Segundos; 
+    } 
+    window.setInterval("Horario()",1000);
+//-->
+</SCRIPT>
+	</div>
+<div id="interface">
+  <header id="cabecalho">
+<h1>Sergio Pires Barra</h1>
+  </header>
+	<a href="http://br.starwars.com/"><img id="sab" src="sabre.gif" width="100" alt="StarWars" title="StarWars"/> </a>
+<img src="imagens/sergiopb.jpg" width="100" height="125">
+<p style="background-color:Tomato;">Profissional.</p>
+<a id="ss" href="profissional.html">Clique aqui para ir a pagina</a>
+<p style="background-color:DodgerBlue;">Lazer.</p>
+<a id="dd" href="lazer.html">Clique aqui para ir a pagina</a>
+<p style="background-color:MediumSeaGreen;">Contato.</p>
+<a id="ff" href="contato.html">Clique aqui para ir a pagina</a>
+<p style="background-color:Gray;">Links.</p>
+<a id="gg" href="links.html">Clique aqui para ir a pagina</a><br>
+<p id="v">visitantes:</p>
+<a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=php-ubuntu-sergiopires201491269500.codeanyapp.com/dsi/projeto01/index.html&digit=style/plain/1/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a><br /><a href="http://www.reliablecounter.com" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
+  </div>
+  </body>
 </html>
