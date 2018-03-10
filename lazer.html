@@ -4,6 +4,10 @@
 	<meta charset="UTF-8"/>
 <title>Área de Lazer</title>
   <style>
+		@font-face {
+	font-family: 'FonteC';
+	src: url("fontes/bubblegum-sans-regular.otf");
+}
   body{
           background-color: #dddddd;
           color: rgba(0, 0, 0, 1);
@@ -16,7 +20,7 @@
 	    	padding: 10px 10px 10px 10px;
 	    }
     h1 {
-			font-family: Arial, sans-serif;
+			font-family: 'FonteC', sans-serif;
 			font-size: 30pt;
 			color: #606060;
 			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
@@ -31,6 +35,9 @@
 			color: #ffffff;
 			text-decoration: none;
        transition: background-color 1s;
+		}
+		div#interface {
+			font-family: 'FonteC';
 		}
 		#interface10 span.alternativo{
  display:none;
@@ -57,23 +64,28 @@
 function slide1(){
 document.getElementById('id').src="imagens/alucard.jpg";
 setTimeout("slide2()", 3000)
+document.getElementById('aId').href="http://hellsing.wikia.com/wiki/Alucard";
+document.getElementById('aId').title="Alucard";
 }
  
 function slide2(){
 document.getElementById('id').src="imagens/kaneki.jpg";
 setTimeout("slide3()", 3000)
+document.getElementById('aId').href="http://tokyoghoul.wikia.com/wiki/Ken_Kaneki";
+document.getElementById('aId').title="Kaneki";
 }
  
 function slide3(){
-document.getElementById('id').src="imagens/dragonball.png";
+document.getElementById('id').src="imagens/dragonball.jpg";
 setTimeout("slide1()", 3000)
+document.getElementById('aId').href="http://dragonball.wikia.com/wiki/Goku";
+document.getElementById('aId').title="Goku";
 }
 </script>
 <body id="idd" onLoad="slide1()">
-<img id="id" width="1340" border="0"/>
+<a id="aId"><img id="id" width="1340" border="0"/></a>
 <body>
   <div id="interface">
-<br/>
 <br/>
 		<br/>
 		<br/>
