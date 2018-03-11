@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8"/>
 <title>Contato.</title>
   <style>
 		@font-face {
@@ -27,13 +28,13 @@
 			margin-bottom: 10px;
 		}
     div#interface a#ss:hover {
-      background-color: #c6c6c6;
-      color: #ffffff;
+      color: red;
     }
      div#interface a#ss {
 			color: #ffffff;
 			text-decoration: none;
-       transition: background-color 1s;
+			 text-shadow: 1px 1px 1px #ffffff;
+       transition: color 1s;
 		}
    /*body {
   behavior:url(csshover.htc);
@@ -56,6 +57,23 @@
 			top: 80px;
 			left: 360px;
 		}
+		/* botoes dos links*/
+		hgroup#cont a:hover {
+      background-color: #999999;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 111px;
+     color: #ffffff;
+    }
+		hgroup#cont a {
+			color: #ff6347;
+			text-shadow: 1px 1px 1px #ffffff;
+			text-decoration: none;
+			 border: none;
+       transition: background-color 1s;
+			 transition: border 1s;
+		}
 		* {cursor: url(lightsabergreen2.cur), default;}
 		body#fon {
 			font-family: 'FonteC';
@@ -75,7 +93,7 @@
 			<br/>
 			<br/>
 			<br/>
-		<h2>Github: </h2>
+		<h2>Github: <a href="https://github.com/sergiopiresbarra/">https://github.com/sergiopiresbarra/</a> </h2>
 				<br/>
 			<br/>
 			<br/>

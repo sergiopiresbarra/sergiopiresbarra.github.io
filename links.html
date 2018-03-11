@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8"/>
 <title>Links</title>
   <style>
 		@font-face {
@@ -27,14 +28,31 @@
 			padding: 0px;
 			margin-bottom: 10px;
 		}
-    div#interface a#ss:hover {
-      background-color: #c6c6c6;
-      color: #ffffff;
+       div#interface a#ss:hover {
+      color: red;
     }
      div#interface a#ss {
 			color: #ffffff;
 			text-decoration: none;
+			 text-shadow: 1px 1px 1px #ffffff;
+       transition: color 1s;
+		}
+		/* botoes dos links*/
+		div#interface ul#lista a:hover {
+      background-color: #999999;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 111px;
+     color: #ffffff;
+    }
+		div#interface ul#lista a {
+			color: #ff6347;
+			text-shadow: 1px 1px 1px #ffffff;
+			text-decoration: none;
+			 border: none;
        transition: background-color 1s;
+			 transition: border 1s;
 		}
 		#interface10 span.alternativo{
  display:none;
@@ -56,7 +74,7 @@
 
 <h1>Links.</h1>
 <p>Links de nossos colegas.</p>
-		<ul type="square">
+		<ul id="lista" type="square">
 		<li><a href="https://andrielsonsantos.github.io">andrielsonsantos</a></li>
 		<li><a href="https://Jaovv.github.io">Jaovv</a></li>
       <li><a href="https://joaomcr.github.io">joaomcr</a></li>
