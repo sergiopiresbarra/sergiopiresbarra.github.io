@@ -8,14 +8,33 @@
 	font-family: 'FonteC';
 	src: url("fontes/bubblegum-sans-regular.otf");
 }
+		header#cabecalho {
+			height: 285px;
+		}
   body{
           background: url("imagens/anime.jpg") fixed;
           color: rgba(0, 0, 0, 1);
 	    }
+		section#corpo {
+			display: block;
+			width: 520px;
+			float: left;
+			border-right: 1px solid #000000;
+			padding-right: 15px; 
+		}
+		aside#lateral {
+			display: block;
+			width: 400px;
+			float: right;
+		}
+		footer#rodape {
+			clear: both;
+			border-top: 1px solid #000000;
+		}
     div#interface {
-	    	width: 900px;
+	    	width: 950px;
 	    	background-color: #1e90ff;
-	    	margin: -20px auto 0px auto;
+	    	margin: 0px auto 0px auto;
 	    	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 	    	padding: 10px 10px 10px 10px;
 	    }
@@ -26,6 +45,24 @@
 			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
 			padding: 0px;
 			margin-bottom: 10px;
+			margin-top: 0px;
+		}
+		h2 {
+			font-family: 'FonteC', sans-serif;
+			font-size: 20pt;
+			color: #888888;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+			padding: 0px;
+			margin-bottom: 0px;
+			margin-top: 15px;
+		}
+		h6 {
+				font-family: 'FonteC', sans-serif;
+			color: #000000;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+			padding: 0px;
+			margin-top: 0px;
+			margin-bottom: 3px;
 		}
       div#interface a#ss:hover {
       color: red;
@@ -73,10 +110,30 @@
        transition: background-color 1s;
 			 transition: border 1s;
 		}
+		div#interface a#b7:hover {
+      background-color: #999999;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 111px;
+     color: #ffffff;
+    }
+		div#interface a#b7 {
+			color: #ff6347;
+			text-shadow: 1px 1px 1px #ffffff;
+			text-decoration: none;
+			 border: none;
+       transition: background-color 1s;
+			 transition: border 1s;
+		}
+		div#vatual iframe {
+			width: 100%;
+		}
 		
 		* {cursor: url(lightsabergreen2.cur), default;}
     </style>
 </head>
+	<header id="cabecalho">
 	  <script type="text/javascript">
 function slide1(){
 document.getElementById('id').src="imagens/alucard.jpg";
@@ -99,28 +156,31 @@ document.getElementById('aId').href="http://dragonball.wikia.com/wiki/Goku";
 document.getElementById('aId').title="Goku";
 }
 </script>
-<body id="idd" onLoad="slide1()">
+<body id="idd" onLoad="slide1()"/>
 <a id="aId"><img id="id" width="1340" border="0"/></a>
+	</header>
 <body>
   <div id="interface">
-<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+<section id="corpo">
 <h1>Área de Lazer</h1>
+		<h2>Vídeos.</h2>
+			<div id="vatual">
  <iframe width="560" height="315" src="https://www.youtube.com/embed/hJY7vut52pQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p>Gosto de Leitura, Games online(Counter-Strike)<br>E fora da Universidade eu gosto de Assistir a seriados e animes. Como The Flash, GOT, DragonBall Super.</p>
+			</div>
+		<h2>Games em Scratch.</h2><h6>{ nescessário habilitar ou manter seu flash player ligado/atualizado. }</h6>
+		 <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/171132686/?autostart=false" frameborder="0" allowfullscreen></iframe>
+  <p>instruções:<br/> 
+		escolha seu personagem clicando em X<br/>
+pegue uma das caixas bonus (azul , vermelha, branca:))<br/>
+olhe os avisos na tela "!"<br/>
+atire em Espaço<br/>
+clique na caixinha se estiver com preguiça de abaixar/regular o volume pelo botão do computador :D<br/>
+		obs:fase1=11; fase2=21 ;fase3=31 pontos cada  8)<br/>
+		<a id="b7" href="https://scratch.mit.edu/">Muito mais de Scratch...</a></p>
+    <p> </p>
+		</section>
+	<aside id="lateral">
+	<p>Gosto de Leitura, Games online(Counter-Strike) no PC, mas no mobile vou de DomiNations.<br>E fora da Universidade eu gosto de Assistir a seriados e animes. Como The Flash, GOT, DragonBall Super.</p>
 <p>obs.: Aqui está alguns dos canais do youtube que Acompanho:<br>
 	<div id="links1">
   <a id="b1" href="https://www.youtube.com/channel/UCe6pKugTDyOPT1Md2DTybbQ">7 Minutoz.</a><br>
@@ -130,8 +190,8 @@ document.getElementById('aId').title="Goku";
 	<a id="b5" href="https://www.youtube.com/channel/UCZFqqE6x_fPkwLDse0WaC0g/">Pabollo - Redublagens.</a><br>
 	<a id="b6" href="https://www.youtube.com/user/voicemakers1">Voice Makers.</a>
 		</div>
-    <p> </p>
- 
+		</aside>
+		<footer id="rodape">
 		<div id="interface10">
 <a id="ss" href="index.html">Voltar.</a>
     <span class="normal">
@@ -141,6 +201,7 @@ document.getElementById('aId').title="Goku";
     <img src="imagens/1f626.png" name="Image17" width="21" height="22">
  </span>
 		</div>
+		</footer>
   </div>
 </body>
 </html>
