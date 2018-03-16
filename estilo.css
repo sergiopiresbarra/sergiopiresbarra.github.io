@@ -1,0 +1,261 @@
+@font-face {
+	font-family: 'FonteC';
+	src: url("fontes/bubblegum-sans-regular.otf");
+}
+  body{
+          background-image: url("https://ogimg.infoglobo.com.br/in/19145023-287-d7d/FT1500A/550/nasanebulaprince.jpg");
+          color: rgba(0, 0, 0, 1);
+	    }
+body#idd img#id {
+			position: absolute;
+			top: 0px;
+			left: 5px;
+		}
+		aside#lateral img#domi {
+			position: relative;
+			width: 100%;
+			left: 0px;
+			margin: 0px;
+			padding: 0px;
+		}
+    div#interface {
+	    	width: 950px;
+	    	background-color: #ebebeb;
+	    	margin: -20px auto 0px auto;
+	    	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	    	padding: 10px 10px 10px 10px;
+	    }
+#interface10 span.alternativo{
+ display:none;
+}
+#interface10:hover span.alternativo{
+  display:block;
+}
+#interface10 span.normal{
+ display:block;
+}
+#interface10:hover span.normal{
+  display:none;
+}
+		header#cabecalho {
+			height: 50px;
+		}
+		section#corpo {
+			display: block;
+			width: 520px;
+			float: left;
+			border-right: 1px solid #000000;
+			padding-right: 15px; 
+		}
+		aside#lateral {
+			display: block;
+			width: 400px;
+			float: right;
+		}
+		footer#rodape {
+			clear: both;
+			border-top: 1px solid #000000;
+		}
+div#interface a#b7:hover {
+      background-color: #999999;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 111px;
+     color: #ffffff;
+    }
+		div#interface a#b7 {
+			color: #ff6347;
+			text-shadow: 1px 1px 1px #ffffff;
+			text-decoration: none;
+			 border: none;
+       transition: background-color 1s;
+			 transition: border 1s;
+		}
+		div#vatual iframe {
+			width: 100%;
+		}
+		footer#rodape img {
+      margin-bottom: 0px;
+			padding: 0px;
+		}
+div#interface hgroup#cont {
+			position: absolute;
+			opacity: 1;
+			top: 80px;
+			left: 360px;
+		}
+		/* botoes dos links*/
+		hgroup#cont a:hover {
+      background-color: #999999;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 111px;
+     color: #ffffff;
+    }
+		hgroup#cont a {
+			color: #ff6347;
+			text-shadow: 1px 1px 1px #ffffff;
+			text-decoration: none;
+			 border: none;
+       transition: background-color 1s;
+			 transition: border 1s;
+		}
+div#links1 a:hover {
+      background-color: #999999;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 111px;
+     color: #ffffff;
+    }
+		div#links1 a {
+			color: #ff6347;
+			text-shadow: 1px 1px 1px #ffffff;
+			text-decoration: none;
+			 border: none;
+       transition: background-color 1s;
+			 transition: border 1s;
+		}
+	div#interface ul#lista a:hover {
+      background-color: #999999;
+    border: 2px solid #999999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 111px;
+     color: #ffffff;
+    }
+		div#interface ul#lista a {
+			color: #ff6347;
+			text-shadow: 1px 1px 1px #ffffff;
+			text-decoration: none;
+			 border: none;
+       transition: background-color 1s;
+			 transition: border 1s;
+		}
+		
+    header#cabecalho h1{
+			font-family: 'FonteC', sans-serif;
+			font-size: 30pt;
+			color: #606060;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+			padding: 0px;
+			margin-bottom: 0px;
+		}
+h1 {
+			font-family: 'FonteC', sans-serif;
+			font-size: 30pt;
+			color: #606060;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+			padding: 0px;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-family: 'FonteC', sans-serif;
+			color: #606060;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+		}
+    h6 {
+				font-family: 'FonteC', sans-serif;
+			color: #000000;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+			padding: 0px;
+			margin-top: 0px;
+			margin-bottom: 3px;
+		}
+		div#interface p#v {
+			font-size: 12pt;
+      padding: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+    }
+    
+    div#interface a#ee:hover,a#dd:hover,a#ff:hover,a#gg:hover {
+      background-color: #c6c6c6;
+			border: 2px solid #c6c6c6;
+    border-radius: 15px;
+    box-sizing: border-box;
+			   width: 111px;
+    }
+		 div#interface a#ee:hover {
+			color: #ffffff;}
+		 div#interface a#dd:hover {
+			color: #ffffff;}
+		 div#interface a#ff:hover {
+			color: #ffffff;}
+		 div#interface a#gg:hover {
+			color: #ffffff;}
+		
+     div#interface a#ee, a#dd, a#ff, a#gg {
+			text-decoration: none;
+       transition: background-color 1s;
+			  transition: border 1s;
+			 transition: color 1s;
+			 border: none;
+		}
+		div#interface a#ee{
+		color: #ff6347;
+		}
+      div#interface a#dd {
+			color: #1e90ff;
+		}
+    div#interface a#ff {
+			color: #3cb371;
+		}
+    div#interface a#gg {
+			color: #808080;
+		}
+		
+		div#interface img#sab {
+			position: absolute;
+			opacity: 1;
+			top: 670px;
+			left: 1050px;
+			padding: 0px;
+			margin: 0px;
+		}
+div#interface a#ss:hover {
+      color: red;
+    }
+     div#interface a#ss {
+			color: #ffffff;
+			text-decoration: none;
+			 text-shadow: 1px 1px 1px #ffffff;
+       transition: color 1s;
+		}
+		
+    div#clock {
+			position: absolute;
+			left: 800px; 
+			top: 10px;
+			font-family: 'FonteC', sans-serif;
+			font-size: 15pt;
+			color: #888888;
+
+		}
+		div#interface h3{
+			font-family: 'FonteC', sans-serif;
+			font-size: 15pt;
+			color: #888888;
+		}
+		div#interface img#sfoto{
+			border: 2px solid white;
+			box-shadow: 1px 1px 4px black;
+		}
+		div#interface {
+			font-family: 'FonteC', sans-serif;
+		}
+		div#slide1 {
+			border: 2px solid white;
+			box-shadow: 1px 1px 4px black;
+			position: relative;
+			left: -3px;
+			margin: none;
+			padding: 0px;
+		}
+  * {cursor: url(lightsabergreen2.cur), default;}
+body#fon {
+			font-family: 'FonteC';
+		}
+
