@@ -3,19 +3,412 @@
 
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>Site da Soldagem</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  //box de procura
+  <script type="text/javascript">
+window.onload = function(){ 
+  //Get submit button
+  var submitbutton = document.getElementById("tfq");
+  //Add listener to submit button
+  if(submitbutton.addEventListener){
+    submitbutton.addEventListener("click", function() {
+      if (submitbutton.value == 'Search our website'){//Customize this text string to whatever you want
+        submitbutton.value = '';
+      }
+    });
+  }
+}
+</script>
 
+<script type="text/javascript">
+function slide1(){
+document.getElementById('id').src="imagens/ferrita.jpg";
+setTimeout("slide2()", 3000)
+}
+ 
+function slide2(){
+document.getElementById('id').src="imagens/robotic-welding.jpg";
+setTimeout("slide3()", 3000)
+}
+ 
+function slide3(){
+document.getElementById('id').src="imagens/soldador.jpg";
+setTimeout("slide1()", 3000)
+}
+</script>
+<body onLoad="slide1()">
+ <style>
+  body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.jumbotron {
+  /*cor do cabecalho*/
+  background-color: #ffffff;
+  color: #fff;
+  padding: 100px 25px;
+  font-family: Montserrat, sans-serif;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.logo-small {
+  color: blue;
+  font-size: 50px;
+}
+
+.logo {
+  color: blue;
+  font-size: 200px;
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+  color: #f4511e;
+}
+
+.carousel-indicators li {
+  border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+  background-color: #f4511e;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.item span {
+  font-style: normal;
+}
+
+.panel {
+  border: 1px solid #f4511e;
+  border-radius: 0 !important;
+  transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.panel-footer .btn:hover {
+  border: 1px solid #f4511e;
+  background-color: #fff !important;
+  color: #f4511e;
+}
+
+.panel-heading {
+  color: #fff !important;
+  background-color: #f4511e !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+  background-color: white !important;
+}
+
+.panel-footer h3 {
+  font-size: 32px;
+}
+
+.panel-footer h4 {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #f4511e;
+  color: #fff;
+}
+
+.nav{padding-left:0;margin-bottom:0;list-style:none}
+.nav>li{position:relative;display:block}
+.nav>li>a{position:relative;display:block;}
+.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;background-color:#eee}
+.nav>li.disabled>a{color:#777}
+.nav>li.disabled>a:focus,.nav>li.disabled>a:hover{color:#777;text-decoration:none;cursor:not-allowed;background-color:transparent}
+.nav .open>a,.nav .open>a:focus,.nav .open>a:hover{background-color:#eee;border-color:#337ab7}
+.nav .nav-divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}
+.nav>li>a>img{max-width:none}
+.nav-tabs{border-bottom:1px solid #ddd}
+.nav-tabs>li{float:left;margin-bottom:-1px}
+.nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}
+
+.navbar {
+  margin-bottom: 0;
+  /* COR DO CABECHALHO */
+  background-color: blue;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  /* COR DAS LETRAS DO MENU QUANDO PASSA O MOUSE*/
+  color: blue !important;
+  background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: #fff !important;
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #f4511e;
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 150px;
+  }
+}
+
+.imagem-cabecalho{
+  max-height: 100px;
+  position: relative;
+  left: 130px;
+  top: -60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.relogio{
+  position: relative;
+  top: -20px;
+  left: 190px;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*search01*/
+
+  #tfheader{
+    position: relative;
+    background-color: none;
+    top: -90px;
+    margin: 0px;
+    /*ESPAÇO ABAIXO DO SLIDE*/
+    padding-bottom: 50px;
+  }
+  #tfnewsearch{
+    position: absolute;
+    left: 1020px;
+    padding-right: -100px;
+    margin-right: -100px;
+    padding-left: -100px; 
+    margin-left: -100px;
+  }
+  .tftextinput2{
+    margin: 0px;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#666;
+    border:1px solid #0076a3; border-right:0px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+  }
+  .tfbutton2 {
+    margin: 0px;
+    padding: 5px 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #0095cd;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+  }
+  .tfbutton2:hover {
+    text-decoration: none;
+    background: #007ead;
+  }
+  /* Fixes submit button height problem in Firefox */
+  .tfbutton2::-moz-focus-inner {
+    border: 0px;
+  }
+  .tfclear{
+    clear:both;
+  }
+
+ div#slide01 img#id {
+   position: absolute;
+   margin-top: 40px;
+   margin-bottom: 110px;
+   padding-top: 10px;
+   padding-bottom: 110px;
+   margin-left: -25px;
+   padding-left: -25px;
+  }
+
+.redessociais{
+  margin-bottom: 0px;
+  padding: 0px;
+  background-color: #f4511e;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.42857143 !important;
+  letter-spacing: 4px;
+  border-radius: 12px;
+  font-family: Montserrat, sans-serif;
+}
+.redessociais li a,
+.redessociais .redessociais-brand {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: blue;
+ }
+
+.redessociais-nav li a:hover,
+.redessociais-nav li.active a {
+  color: blue !important;
+}
+
+.redessociais-default .redessociais-toggle {
+  border-color: transparent;
+  color: blue !important;
+}
+.redessociais-right{
+  position: relative;
+    left: 1040px;
+    top: 10px;
+}
+.redondo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.redes01>li>a{position:relative;display:block;}
+/*COR DAS REDES SOCIAIS QUANDO PASSA O MOUSE*/
+.redes01>li>a:hover{text-decoration:none;background-color:#fff}
+.redes01{padding-left:0;margin-bottom:0;list-style:none}
+  </style>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
 
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -25,37 +418,44 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand"><img src="imagens/ls.jpg"/>Logo</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-left">
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#services">SERVICES</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
           <li><a href="#pricing">PRICING</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
+         <ul class="redes01 redessociais redessociais-right">
+          <li><a href="" style="position: absolute; left: -20px; top: 0px"><img src="imagens/face.png" width="30" /></a></li>
+          <li><a href="" style="position: absolute; left: -60px; top: 0px"><img src="imagens/in.png" width="30" /></a></li>
+          <li><a href="" style="position: absolute; left: -100px; top: 0px"><img src="imagens/t.png" width="30" /></a></li>
+          <li><a href="" style="position: absolute; left: -140px; top: 0px"><img src="imagens/youtube.png" width="30" /></a></li>
+        </ul>
       </div>
     </div>
   </nav>
 
-  <div class="jumbotron text-center">
-    <h1>Company</h1>
-    <p>We specialize in blablabla</p>
-    <form>
-      <div class="input-group">
-        <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-        <div class="input-group-btn">
-          <button type="button" class="btn btn-danger">Subscribe</button>
-        </div>
-      </div>
+  <div class="jumbotron">
+    <img class="imagem-cabecalho" src="imagens/ls.jpg"/>
+    <iframe  class="relogio" src="https://freesecure.timeanddate.com/clock/i66bpyac/n430/tlbr5/ftb/tt0/tw0" frameborder="0" width="230" height="18"></iframe>
+     <div id="tfheader">
+    <form id="tfnewsearch" method="get" action="http://www.google.com">
+            <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"><input type="submit" value=">" class="tfbutton2">
     </form>
+    <div id="slide01" class="tfclear"><img id="id" width="1349" height="390"></div>
+  </div>
+
   </div>
 
   <!-- Container (About Section) -->
   <div id="about" class="container-fluid">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-2">
         <h2>About Company Page</h2><br>
         <span class="glyphicon glyphicon-signal logo"></span>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
@@ -73,13 +473,15 @@
           ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
       </div>
-       <div class="col-sm-3">
+       <div class="col-sm-2">
          <h2>vazio</h2>
           <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
           ex ea commodo consequat.</h4><br>
         <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
           ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
+      </div>
+        <div class="col-sm-1">
       </div>
     </div>
   </div>
