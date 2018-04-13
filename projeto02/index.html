@@ -495,6 +495,12 @@
         /* Adiciona borda esquerda na div como ser fosse uma linha.*/
         border-color: black;
       }
+      .espaco {
+        padding-left: 20px;
+      }
+      .espacolinha {
+        padding-left: 40px;
+      }
 
       .redes01>li>a {
         position: relative;
@@ -513,6 +519,14 @@
         margin-bottom: 0;
         list-style: none
       }
+      iframe.box0 {
+background-color: #000000; 
+border:5px solid #000000;
+padding: 5px;
+border-radius: 12px;
+height: 320px;
+padding-top: 85px;
+}
     </style>
 </head>
 
@@ -525,7 +539,7 @@
           <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           </li>
           <li><a href="#about">SOBRE</a></li>
-          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#services">CONCEITO BÁSICO</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
           <li><a href="#pricing">PRICING</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -580,7 +594,8 @@ iii) Investimentos aumentarão 4%<p/>
       <div class="col-sm-2 V">
         <h2 style="font-size:14pt; padding-bottom:-30px; margin-bottom:-30px;">Vagas e<br/> oportunidades</h2>
         <img src="imagens/trabalho1.png" style="width:65px; position:relative; top:-40px; left:112px; padding-bottom:-50px; margin-bottom:-50px;"/>
-        <h2 style="font-size:14pt">Especialista em Soldagem</h2>
+        <h2 style="font-size:14pt; padding-bottom:5px; margin-bottom:5px;">Especialista em Soldagem</h2>
+        <img style="width:70%; position:relative; left:10px;" src="imagens/logo-action.jpg">
         <p>Local: Passo Fundo (RS)<br/>
 Número de vagas: 01<br/>
 Recrutante: Action Con&shy;sul&shy;to&shy;ria e Desenvolvimento <br/>
@@ -602,44 +617,52 @@ Requisitos / características:<br/>
   <br/>
   <br/>
   <br/>
-  <div class="container-fluid bg-grey">
+  <div class="row col-sm-12"><br/><br/>
+    <hr class="H" />
+    <br/>
+  </div>
+  <!-- Container (About Section) -->
+  <div id="services" class="container-fluid">
     <div class="row">
-      <h2>vazio</h2>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5">
+        <h2 style="margin-bottom:-20px; padding-bottom:-20px;">Conceito Básico</h2><br>
+        <img src="imagens/icons8-para-iniciante-100.png" style="position:relative; top:-70px; left:175px; padding-bottom:-50px; margin-bottom:-50px; width:70px;">
+        <img src="imagens/grandezas-eletricas-soldagem.jpg" style="width:500px;">
+        
+        <h2 style="margin-bottom:-1px; padding-bottom:-1px;">Soldagem: O problema das denominações das grandezas elétricas</h2> 
+        <p><h6 style="margin-bottom:-35px; padding-bottom:-35px;">Fonte: Sérgio R. Barra (Site da Soldagem)</h6><br/>              
+        <h6 style="margin-bottom:-20px; padding-bottom:-20px;">Postada em: 20/12/17</h6><br/> 
+
+        O texto resume as considerações sobre o uso e as relações das grandezas elé&shy;tri&shy;cas
+        "corrente elé&shy;tri&shy;ca" (ampère), "tensão elétrica" (volt), "resistência elé&shy;tri&shy;ca" (ohm)
+        e "potência elétrica" (watt), bem como os problemas ob&shy;ser&shy;&shy;va&shy;dos quan&shy;do da grafia e da pronúncia.
+        Portanto, cabe a cada um avaliar a per&shy;ti&shy;nên&shy;cia ou não das informações trabalhadas
+        (conhecimento não é isolado e nunca está finalizado - sempre haverá um novo pedaço a ser incorporado no todo).<br/>
+
+
+        Quanto ao significado físico das grandezas elétricas fundamentais, a Figura 1 descreve, de forma lúdica,
+        como está relacionado internamen&shy;te o tri&shy;pé ten&shy;são elé&shy;tri&shy;ca (diferença de potencial ddp imposto no circuito elétrico
+        - força motriz para o deslocamento do "fluxo" dos elétrons), corrente elétri&shy;ca (quan&shy;ti&shy;da&shy;de de car&shy;ga ΔQ na unidade de tempo
+        t - fluxo de elétrons no interior do condutor "atravessando um determinada seção transversal") e a resistência elétrica
+        (propriedade do condutor elétrico em se opor a passagem da cor&shy;ren&shy;te elé&shy;tri&shy;ca - R = ρl/A). Portanto, é importante que se
+          tenha em mente o como e o o porque da ocorrência fenômeno elétrico.</p>
+    </div>
+        <div class="col-sm-5 espacolinha">
+          <div class="V espaco">
+          <iframe class="box0" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FoSiteDaSoldagem%2Fvideos%2F1179839772146875%2F&width=430&show_text=false&height=241&appId" width="430" height="241" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+          <img src="imagens/videosimg.png" style="position:relative; top:-305px; left:5px;"/>
+          </div>
+      </div>
+      <div class="col-sm-1"></div>
     </div>
   </div>
-  <!-- Container (Services Section) -->
-  <div id="services" class="container-fluid text-center">
-    <h2>SERVICES</h2>
-    <h4>What we offer</h4><br>
-    <div class="row slideanim">
-      <div class="col-sm-4"><span class="glyphicon glyphicon-off logo-small"></span>
-        <h4>POWER</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4"><span class="glyphicon glyphicon-heart logo-small"></span>
-        <h4>LOVE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4"><span class="glyphicon glyphicon-lock logo-small"></span>
-        <h4>JOB DONE</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-    </div><br><br>
-    <div class="row slideanim">
-      <div class="col-sm-4"><span class="glyphicon glyphicon-leaf logo-small"></span>
-        <h4>GREEN</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4"><span class="glyphicon glyphicon-certificate logo-small"></span>
-        <h4>CERTIFIED</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-      <div class="col-sm-4"><span class="glyphicon glyphicon-wrench logo-small"></span>
-        <h4 style="color:#303030;">HARD WORK</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
-      </div>
-    </div>
-  </div>
+    <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
   <!-- Container (Portfolio Section) -->
   <div id="portfolio" class="container-fluid text-center bg-grey">
     <h2>Portfolio</h2><br>
