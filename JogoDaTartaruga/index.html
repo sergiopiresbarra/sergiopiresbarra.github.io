@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Pong Game</title>
+        <style>
+        body {background-color: #124e70;}
+        </style>
+		<audio id='playAudio'>
+  		<source src="sons/hit-pipe.mp3" type="audio/mpeg">
+		</audio>
+		<audio id='playAudio2'>
+  		<source src="sons/bomba.mp3" type="audio/mpeg">
+		</audio>
+		<script src="tartaruga.js"></script>
+	</head>     
+    </head>
+    <body>
+        <h1>Jogo</h1>
+		<button onclick="iniciarJogo()">
+			Jogar
+		</button>
+		<button onclick="pararJogo()">
+			Parar
+		</button>
+		
+		<div id="pos" style="position: absolute; top: 10px;left: 200px;"></div>
+		<div id="num_cenouras" style="position: absolute; top: 10px;left: 600px"></div>
+		<div id="score" style="position: absolute; top: 10px;left: 650px">
+			SCORE:0
+		</div>
+		
+		<div id="cenoura" style="position: absolute; top: 100px;left: 600px; visibility:visible;">
+			<img width="100px" height="100px" src="images/bola2.gif"/>
+		</div>
+		<div id="explosao" style="position: absolute; top: 580px; left: 0px; visibility:hidden;">
+			<img width="100px" height="100px" src="images/Plasmabomb2.gif"/>
+		</div>
+		<div id="jogador" style="position: absolute; top: 510px;left: 300px;">
+			<img width="100px" height="100px" src="images/A98.gif"/>
+		</div>
+    </body>
+</html>

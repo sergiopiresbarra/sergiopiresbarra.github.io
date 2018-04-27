@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Jogo da Velha</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+         var c=0;
+      $(document).ready(function(){
+      $(".x").click(function(){
+      if(c===0){
+        $("#x").hide();
+         $("#o").show();
+        c=1;
+      }
+        });
+          $(".o").click(function(){
+      if(c===1){
+        $("#o").hide();
+         $("#x").show();
+        c=0;
+      }
+        });
+     });
+      </script>
+  </head>
+  <bory>
+    <div id="1" style="position: absolute; top: 10px;left: 10px; visibility:visible;">
+    <img width="600px" height="600px" src="http://2.bp.blogspot.com/-zvAQl_a5aTo/U4KKdwEoDGI/AAAAAAAAN3k/JC6trHRceeE/s1600/jogo+da+velha+2+-+Cria%C3%A7%C3%A3o+Blog+PNG+Free.png" />
+    </div>
+    <div class="x" style="position: absolute; top: 10px;left: 10px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 10px;left: 260px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 10px;left: 500px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 260px;left: 10px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 260px;left: 260px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 260px;left: 500px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 500px;left: 10px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 500px;left: 260px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+    <div id="x" style="position: absolute; top: 500px;left: 500px; visibility:visible;">
+      <img width="120px" height="120px" src="https://3.bp.blogspot.com/-N2VMeTPYgYc/V1Q2LQZWcLI/AAAAAAAAIK4/0fwzeh2KkaUFAikoh8BLH6ts7NEOp1nVACLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528X%2529.jpg">
+    </div>
+   
+    <div class="o" style="position: absolute; top: 10px;left: 10px; visibility:visible;">
+      <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+    </div>
+    <div id="o" style="position: absolute; top: 10px;left: 260px; visibility:visible;">
+     <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+   </div>
+    <div id="o" style="position: absolute; top: 10px;left: 500px; visibility:visible;">
+      <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+    </div>
+    <div id="o" style="position: absolute; top: 260px;left: 10px; visibility:visible;">
+    <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+   </div>
+    <div id="o" style="position: absolute; top: 260px;left: 260px; visibility:visible;">
+     <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+    </div>
+    <div id="o" style="position: absolute; top: 260px;left: 500px; visibility:visible;">
+    <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+     </div>
+    <div id="o" style="position: absolute; top: 500px;left: 10px; visibility:visible;">
+     <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+    </div>
+    <div id="o" style="position: absolute; top: 500px;left: 260px; visibility:visible;">
+    <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+   </div>
+    <div id="o" style="position: absolute; top: 500px;left: 500px; visibility:visible;">
+     <img width="120px" height="120px" src="https://2.bp.blogspot.com/-93FrtflL8LQ/V1Q2LebThhI/AAAAAAAAIK0/kK7jRO5NyPEPboZ_gttrM_mj_VRfJFPJgCLcB/s1600/Jogo%2Bda%2BVelha%2BB%25C3%258DBLICO_%2528O%2529.jpg">
+    </div>
+  </bory>
+  
+  
+  
+</html>
