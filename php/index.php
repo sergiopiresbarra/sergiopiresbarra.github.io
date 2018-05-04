@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<?php
-  //comentarios
-  $valor = 10 + 35;
-  echo "O resultado foi:".$valor;
-?>
-
-  <script>
-  var valor = 10+35;
-     alert(valor);
-  </script>
-
-<form action="cadastrar.php">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br><br>
+  <form action="cadastrar.php">
+  Nome:<br>
+  <input type="text" name="nome" value=><br>
+  Email:<br>
+  <input type="text" name="email" value=><br><br>
+   Senha:<br>
+  <input type="password" name="senha" type="*"><br><br>    
   <input type="submit" value="Submit">
-</form> 
-  
+</form>
+  </br>
+  <a href="listar.php">Listar</a>
 </body>
 </html>
