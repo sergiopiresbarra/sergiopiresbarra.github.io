@@ -1,8 +1,8 @@
-<?php include 'cabecalho.php';?>
+<html>
+<body>
 
-
-Bem vindo <?php echo $_POST["nome"]; ?><br>
-Tome cuidado, agora sei seu e-mail: <?php echo $_POST["email"]; ?>
+Bem vindo <?php echo $_GET["nome"]; ?><br>
+Tome cuidado, agora sei seu e-mail: <?php echo $_GET["email"]; ?>
   <?php
   $servername = "localhost";
   $username = "root";

@@ -1,5 +1,7 @@
-<?php include 'cabecalho.php';?>
-
+<html>
+  <head>   
+  </head>
+  <body>
     <?php
   $servername = "localhost";
   $username = "root";
@@ -32,12 +34,10 @@ if ($result->num_rows > 0) {
 }
     
 if($logado==true) {
-   $_SESSION["logado"] = true;
    echo "Bem vindo ".$email;
    echo "<br><a href='listar.php'>Listar usuarios</a>";
-   echo "<br><a href='editar.php'>Editar usuarios</a>";
 } else {
-  header("Location: login.php?erro=senha e usuarios nao encontrados");
+  header("Location: index.php?erro=senha e usuarios nao encontrados");
 }
     
 $conn->close();

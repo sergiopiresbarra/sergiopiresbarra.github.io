@@ -1,9 +1,6 @@
 <?php include 'cabecalho.php';?>
 
-
-Bem vindo <?php echo $_POST["nome"]; ?><br>
-Tome cuidado, agora sei seu e-mail: <?php echo $_POST["email"]; ?>
-  <?php
+ <?php
   $servername = "localhost";
   $username = "root";
   $password = "";
@@ -17,16 +14,16 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 echo "<br>Sistema conectado ao sgbd";
+  $id = $_POST["id"];
   $nome = $_POST["nome"];
-  $senha = sha1($_POST["senha"]);
   $email = $_POST["email"];
   $endereco = $_POST["endereco"];
   
-  $sql = "INSERT INTO usuario (nome, email, senha, endereco)
-VALUES ('".$nome."', '".$email."', '".$senha."', '".$endereco."')";
+  $sql = "UPDATE usuario SET nome='".$nome."', email='".$email."', endereco='".$endereco."'
+ WHERE id=".$id;
 
 if ($conn->query($sql) === TRUE) {
-    echo "Cadastrado com sucesso!";
+    echo "Atualizdo com sucesso!";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

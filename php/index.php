@@ -1,32 +1,30 @@
-<!DOCTYPE html>
-<html>
-<body>
+<?php include 'cabecalho.php';?>
 
-  <h1>
-    Login
-  </h1>
-  <div>
-    <?php
-      if (!empty($_GET)) {
-         $erro = $_GET["erro"]; 
-         echo "<p style='color:red'>".$erro."</p>";
-      }
-        
-    ?>
-  </div>
-<form action="logar.php">
- 
-  e-mail:<br>
-  <input type="text" name="email">
-  <br><br>
-  senha:<br>
-  <input type="password" name="senha">
-  <br><br>
-  <input type="submit" value="Entrar">
-</form> 
+
+<div class="jumbotron text-center">
+  <h1>Meu Sistema de cadastro</h1>
+  <p>Bem vindo ao FUTURO!</p> 
+</div>
+
+<div id="teste">
   
-  <a href="cadastro.html">Cadastrar</a>
-
+</div>  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Sistema de login</h3>
+      <p>Utilizamos PHP e senhas criptografadas...</p>
+     </div>
+    <div id="banco_de_dados" class="col-sm-4">
+      <h3>Banco de dados Relacional</h3>
+      <p>MYSQL na veia...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>AJAX</h3>        
+      <p>Ainda nao, mas ja ja...</p>
+      </div>
+  </div>
+</div>
 
 </body>
 </html>
