@@ -13,13 +13,111 @@
     	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     	<link rel="icon" href="img/icon.png">
     </head>
+    <style>
+    	.menu{
+    		width: 100%;
+    		height: 50px;
+    		background-color: #222;
+    		font-family: 'Arial';
+    	}
+    	.menu ul{
+    		list-style: none;
+    		position: relative;
+    	}
+    	.menu ul li{
+    		width: 150px;
+    		float: right;
+    	}
+
+    	.menu a{
+    		padding: 15px;
+    		display: block;
+    		text-decoration: none;
+    		text-align: center;
+    		background-color: #222;
+    		color: #fff;
+    	}
+
+    	.menu ul ul{
+    		position: absolute;
+    		visibility: hidden;
+    	}
+
+    	.menu ul li:hover ul{
+    		visibility: visible;
+    	}
+    	.menu a:hover{
+    		background-color: #f4f4f4;
+    		color: #555;
+    	}
+    	.menu ul ul li{
+    		float: none;
+    		border-bottom: solid 1px #ccc;
+    	  }
+
+    	.menu ul ul li a{
+    		background-color: #069;
+    	}
+
+    	label[for="bt_menu"]{
+    		padding: 5px;
+    		background-color: #222;
+    		color: #fff;
+    		font-family: "Arial";
+    		text-align: center;
+    		font-size: 30px;
+    		cursor: pointer;
+    		width: 50px;
+    		height: 50px;
+    	}
+    	#bt_menu{
+    		display: none;
+    	}
+
+    	label[for="bt_menu"]{
+    	   display: none;
+    	}
+
+    	@media(max-width: 800px){
+    		label[for="bt_menu"]{
+    		display: block;
+    	}	
+    	    #bt_menu:checked ~ .menu{
+    	    	margin-left: 0;
+    	    }
+
+    		.menu{
+    			margin-top: 5px;
+    			margin-left: -120%;
+    			transition: all .4s;
+
+    		}
+    		.menu ul li{
+    			width: 100%;
+    			float: none;
+    		}
+    		.menu ul ul{
+    			position: static;
+    			overflow: hidden;
+    			max-height: 0;
+    			transition: all .4s;
+    		}
+    		.menu ul li:hover ul{
+    			height: auto;
+    			max-height: 200px;
+    		}
+    	}
+
+
+
+
+    </style>
     <body>
         <!-- CABEÇALHO --> 
         <header class="cabecalho container">
-           <a href="index.html"><h1 class="logo"> Sérgio Pires Barra </h1></a>
-           <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+           <input type="checkbox" id="bt_menu">
+    	   <label for="bt_menu">&#9776;</label>
            <nav class="menu">
-               <a class="btn-close"><i class="fa fa-times"></i></a>
                <ul>
                    <li><a href="#">Home</a></li>
                    <li><a href="profissional.html">Perfil Proficional</a></li>
@@ -28,7 +126,8 @@
                    <li><a href="links.html">Links</a></li>
                    
                </ul>
-           </nav>   
+           </nav>  
+            <a href="index.html"><h1 class="logo"> Sérgio Pires Barra </h1></a> 
            <div id="clock">
     <SCRIPT LANGUAGE="JAVASCRIPT">
       <!--
@@ -148,9 +247,9 @@
         <!-- SERVICOS --> 
         <main class="servicos container">
             <article class="servico bg-white radius">
-               <a href="#"><img src="img/criacoes.jpg" alt="Meu Git"></a>
+               <a href="https://github.com/sergiopiresbarra"><img src="img/criacoes.jpg" alt="Meu Git"></a>
                <div class="inner">
-                   <a href="#"> Meu Git </a>
+                   <a href="https://github.com/sergiopiresbarra"> Meu Git </a>
                    <h4>coisas no github</h4>
                    <p>aqui é onde está quase tudo que ja fiz. </p>
                </div>
@@ -183,9 +282,9 @@
             </script>
             </article>
             <article class="servico bg-white radius">
-               <a href="#"><img src="img/cs.jpg" alt="Jogos"></a>
+               <a href="JogoDaTartaruga/index.html"><img src="img/cs.jpg" alt="Jogos"></a>
                <div class="inner">
-                   <a href="#"> Jogos </a>
+                   <a href="JogoDaTartaruga/index.html"> Jogos </a>
                    <h4> Criação de Jogos </h4>
                    <p>aqui voce pode ver o ultimo jogo criado. </p>
                </div>
