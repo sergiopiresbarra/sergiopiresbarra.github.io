@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Desenho de Figuras em ASCII: Código-Fonte de Projeto-parte-2/retangulo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logofiguras.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Desenho de Figuras em ASCII
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9d0a67fe967ae5fed1e3587981fcbea3.html">Projeto-parte-2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">retangulo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="retangulo_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RETANGULO_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RETANGULO_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="figurageometrica_8h.html">figurageometrica.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classretangulo.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classretangulo.html">retangulo</a> : <span class="keyword">public</span> <a class="code" href="class_figura_geometrica.html">FiguraGeometrica</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> px, py, altura, largura;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">char</span> brush;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classretangulo.html#a2e1943cba1addcf2c4df5b928367e69d">retangulo</a>(<span class="keywordtype">int</span> _px=0,<span class="keywordtype">int</span> _py=0,<span class="keywordtype">int</span> _altura=0,<span class="keywordtype">int</span> _largura=0);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classretangulo.html#a8c037b5ee941ce662e374bf926529814">draw</a>(<a class="code" href="class_screen.html">Screen</a> &amp;t);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classretangulo.html#a2bcc004893ada64dee77270be99964c3">setBrush</a>(<span class="keywordtype">char</span> b);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // RETANGULO_H</span></div><div class="ttc" id="class_screen_html"><div class="ttname"><a href="class_screen.html">Screen</a></div><div class="ttdoc">The Screen class. </div><div class="ttdef"><b>Definition:</b> screen.h:9</div></div>
+<div class="ttc" id="class_figura_geometrica_html"><div class="ttname"><a href="class_figura_geometrica.html">FiguraGeometrica</a></div><div class="ttdoc">The FiguraGeometrica class. </div><div class="ttdef"><b>Definition:</b> figurageometrica.h:7</div></div>
+<div class="ttc" id="classretangulo_html"><div class="ttname"><a href="classretangulo.html">retangulo</a></div><div class="ttdoc">The retangulo class. </div><div class="ttdef"><b>Definition:</b> retangulo.h:8</div></div>
+<div class="ttc" id="figurageometrica_8h_html"><div class="ttname"><a href="figurageometrica_8h.html">figurageometrica.h</a></div></div>
+<div class="ttc" id="classretangulo_html_a2bcc004893ada64dee77270be99964c3"><div class="ttname"><a href="classretangulo.html#a2bcc004893ada64dee77270be99964c3">retangulo::setBrush</a></div><div class="ttdeci">void setBrush(char b)</div><div class="ttdoc">setBrush </div><div class="ttdef"><b>Definition:</b> retangulo.cpp:45</div></div>
+<div class="ttc" id="classretangulo_html_a2e1943cba1addcf2c4df5b928367e69d"><div class="ttname"><a href="classretangulo.html#a2e1943cba1addcf2c4df5b928367e69d">retangulo::retangulo</a></div><div class="ttdeci">retangulo(int _px=0, int _py=0, int _altura=0, int _largura=0)</div><div class="ttdoc">retangulo </div><div class="ttdef"><b>Definition:</b> retangulo.cpp:10</div></div>
+<div class="ttc" id="classretangulo_html_a8c037b5ee941ce662e374bf926529814"><div class="ttname"><a href="classretangulo.html#a8c037b5ee941ce662e374bf926529814">retangulo::draw</a></div><div class="ttdeci">void draw(Screen &amp;t)</div><div class="ttdoc">draw </div><div class="ttdef"><b>Definition:</b> retangulo.cpp:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

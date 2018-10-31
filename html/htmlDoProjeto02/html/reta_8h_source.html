@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Desenho de Figuras em ASCII: Código-Fonte de Projeto-parte-2/reta.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logofiguras.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Desenho de Figuras em ASCII
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_9d0a67fe967ae5fed1e3587981fcbea3.html">Projeto-parte-2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">reta.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="reta_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RETA_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RETA_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="figurageometrica_8h.html">figurageometrica.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_reta.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_reta.html">Reta</a> : <span class="keyword">public</span> <a class="code" href="class_figura_geometrica.html">FiguraGeometrica</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> x1, y1, x2, y2;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">char</span> brush;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_reta.html#a78cc654bc22f6bdc70c474f0519cdf3c">Reta</a>(<span class="keywordtype">int</span> _x1=0, <span class="keywordtype">int</span> _y1=0, <span class="keywordtype">int</span> _x2=0, <span class="keywordtype">int</span> _y2=0);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_reta.html#ac2e9805183cd474b62bffd8b032cd780">draw</a>(<a class="code" href="class_screen.html">Screen</a> &amp;t);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_reta.html#ac6b159a6135d29f85e27501db7b7a9cc">setBrush</a>(<span class="keywordtype">char</span> b);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif // RETA_H</span></div><div class="ttc" id="class_reta_html_ac6b159a6135d29f85e27501db7b7a9cc"><div class="ttname"><a href="class_reta.html#ac6b159a6135d29f85e27501db7b7a9cc">Reta::setBrush</a></div><div class="ttdeci">void setBrush(char b)</div><div class="ttdoc">setBrush </div><div class="ttdef"><b>Definition:</b> reta.cpp:81</div></div>
+<div class="ttc" id="class_screen_html"><div class="ttname"><a href="class_screen.html">Screen</a></div><div class="ttdoc">The Screen class. </div><div class="ttdef"><b>Definition:</b> screen.h:9</div></div>
+<div class="ttc" id="class_figura_geometrica_html"><div class="ttname"><a href="class_figura_geometrica.html">FiguraGeometrica</a></div><div class="ttdoc">The FiguraGeometrica class. </div><div class="ttdef"><b>Definition:</b> figurageometrica.h:7</div></div>
+<div class="ttc" id="class_reta_html"><div class="ttname"><a href="class_reta.html">Reta</a></div><div class="ttdoc">The Reta class. </div><div class="ttdef"><b>Definition:</b> reta.h:7</div></div>
+<div class="ttc" id="class_reta_html_a78cc654bc22f6bdc70c474f0519cdf3c"><div class="ttname"><a href="class_reta.html#a78cc654bc22f6bdc70c474f0519cdf3c">Reta::Reta</a></div><div class="ttdeci">Reta(int _x1=0, int _y1=0, int _x2=0, int _y2=0)</div><div class="ttdoc">Reta. </div><div class="ttdef"><b>Definition:</b> reta.cpp:13</div></div>
+<div class="ttc" id="figurageometrica_8h_html"><div class="ttname"><a href="figurageometrica_8h.html">figurageometrica.h</a></div></div>
+<div class="ttc" id="class_reta_html_ac2e9805183cd474b62bffd8b032cd780"><div class="ttname"><a href="class_reta.html#ac2e9805183cd474b62bffd8b032cd780">Reta::draw</a></div><div class="ttdeci">void draw(Screen &amp;t)</div><div class="ttdoc">draw </div><div class="ttdef"><b>Definition:</b> reta.cpp:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
