@@ -1,7 +1,12 @@
 /*=========== RESET ==========*/
-* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
-font-family: 'Lato', sans-serif;}
+@font-face {
+   font-family: myFirstFont;
+   src: url(../fontes/bubblegum-sans-regular.otf);
+}
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; cursor: url(../lightsabergreen2.cur), default; font-family: myFirstFont;}
 body {background-color: #f5f5f5;}
+
+
 a {text-decoration: none;}
 ul {list-style: none;}
 img {max-width: 100%;}
@@ -78,9 +83,5 @@ font-size: 0;}
 /* LARGE DEVICES - WIDE SCREENS*/
 @media screen and (min-width: 1280px) {
 
-
-
 }
-
-
 
