@@ -65,7 +65,7 @@ function darPlay() {
 	
 				    }
 				    document.getElementById('explosao').style.visibility = "hidden";
-					document.getElementById('pos').innerHTML = "Jogador: x:" + jogador.posX + " y:" + jogador.posY + "</br> Cenoura: x:" + cenoura.posX + " y:" + cenoura.posY;
+					document.getElementById('pos').innerHTML = "Jogador: x:" + jogador.posX + " y:" + jogador.posY + "</br> Bola: x:" + cenoura.posX + " y:" + cenoura.posY;
 					contador_de_cenouras = contador_de_cenouras + 1;
 					document.getElementById('num_cenouras').innerHTML = contador_de_cenouras;
 					if(cenoura.posY<620 && G>0){
