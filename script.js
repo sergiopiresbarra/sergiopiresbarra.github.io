@@ -15,12 +15,14 @@ function noturna(){
         noite.innerHTML = 'Modo Diurno';
     }
     else{
-        x.style.background = 'white';
-        y.style.background = 'white';
+        x.style = 'body {background-color: #f5f5f5;}';
+        y.style = '.bg-gradient {background: linear-gradient(to right,#ce2e3c,#da6709);}';
         a.style.background = 'white';
         b.style.background = 'white';
         c.style.background = 'white';
+
         noite.innerHTML = 'Modo Noturno';
+
         
     }
 }
