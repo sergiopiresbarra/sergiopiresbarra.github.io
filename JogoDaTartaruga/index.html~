@@ -106,7 +106,7 @@
 						}
 					}
 				}
-				document.getElementById('pos').innerHTML = "Jogador: x:" + jogador.posX + " y:" + jogador.posY + "</br> Cenoura: x:" + cenoura.posX + " y:" + cenoura.posY;
+				document.getElementById('pos').innerHTML = "Jogador: x:" + jogador.posX + " y:" + jogador.posY + "</br> CENOURA: x:" + cenoura.posX + " y:" + cenoura.posY;
 				if(colisao(jogador, cenoura) && temCenoura) {
 					jogador.score = jogador.score + cenoura.pontos;
 					document.getElementById("cenoura").style.visibility = "hidden";
